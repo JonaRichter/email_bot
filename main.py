@@ -2,12 +2,22 @@ import smtplib, ssl
 import csv
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+import json
+from dotenv import load_dotenv
+import os
 
-SENDER_EMAIL = "jonarichter@gmx.de"
-SENDER_EMAIL_PASSWORD = ""
-SENDER_NAME = "Kbrol"
-SONG_TITLE = "Quiero Tequila"
-SONG_LINK = "https://open.spotify.com/intl-de/track/1WwDJGrh7cBR5fohRUAut1?si=69ebd8715c8e4d3c"
+# Load configuration from config.js file
+with open("config.json") as config_file:
+    config_data = json.load(config_file)
+
+# Load password from .env file
+load_dotenv()
+
+SENDER_EMAIL = os.getenv("SENDER_EMAIL")
+SENDER_EMAIL_PASSWORD = os.getenv("SENDER_EMAIL_PASSWORD")
+SENDER_NAME = os.getenv("SENDER_NAME")
+SONG_TITLE = os.getenv("SONG_TITLE")
+SONG_LINK = os.getenv("SONG_LINK")
 
 with open("contacts_file.csv") as file:
     reader = csv.reader(file)
