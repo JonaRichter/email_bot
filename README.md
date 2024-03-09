@@ -86,9 +86,9 @@
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `JonaRichter`, `jonarichter_bot`, `twitter_handle`, `Jona Richter`, `gmx`, `jonarichter`, `E-Mail Bot`, `project_description`
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
@@ -129,6 +129,7 @@ To set up and run this script, follow the steps below:
     git clone https://github.com/JonaRichter/email_bot.git
     cd email_bot
     ```
+
 2. **Create and activate a Python virtual environment:**
     * For Windows:
       ```bash
@@ -140,12 +141,14 @@ To set up and run this script, follow the steps below:
       python3 -m venv .venv
       source .venv/bin/activate
       ```
+
 3. **Install the required dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
-4. **Set up the `.env` file:**  
-    Rename the `dot.env` file in the root of the project directory to `.env` and populate it with your configuration details:
+
+4. **Set up the `config.env` file:**  
+    Populate the `config.env` file with your configuration details:
     ```bash
     SENDER_EMAIL=your_email@example.com
     SENDER_EMAIL_PASSWORD=your_password
@@ -158,6 +161,9 @@ To set up and run this script, follow the steps below:
 5. **Set up the `contacts_file.csv`:**  
     Populate the `contacts_file.csv` with your actual data.
 
+6. **Adjust your E-Mail content**  
+    Adjust the content you want to include to your E-Mail to your preferences in `main.py`
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -166,8 +172,10 @@ To set up and run this script, follow the steps below:
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-After filling the data, just run the `main.py`and enjoy!
+After filling the data, just run the `main.py`and enjoy!  
+An example E-Mail could look like this:
 
+![Example Mail](images/example_email.png)
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
