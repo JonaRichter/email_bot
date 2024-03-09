@@ -6,12 +6,8 @@ import json
 from dotenv import load_dotenv
 import os
 
-# Load configuration from config.js file
-with open("config.json") as config_file:
-    config_data = json.load(config_file)
-
-# Load password from .env file
-load_dotenv()
+# Load configuration from .env file
+load_dotenv("configuration.env")
 
 SENDER_EMAIL = os.getenv("SENDER_EMAIL")
 SENDER_EMAIL_PASSWORD = os.getenv("SENDER_EMAIL_PASSWORD")
