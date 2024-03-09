@@ -2,7 +2,6 @@ import smtplib, ssl
 import csv
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-import json
 from dotenv import load_dotenv
 import os
 
