@@ -4,7 +4,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 SENDER_EMAIL = "jonarichter@gmx.de"
-SENDER_EMAIL_PASSWORD = "th278a31"
+SENDER_EMAIL_PASSWORD = ""
 SENDER_NAME = "Kbrol"
 SONG_TITLE = "Quiero Tequila"
 SONG_LINK = "https://open.spotify.com/intl-de/track/1WwDJGrh7cBR5fohRUAut1?si=69ebd8715c8e4d3c"
